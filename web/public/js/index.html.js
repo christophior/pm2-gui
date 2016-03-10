@@ -934,7 +934,7 @@ function showPopupTab(proc, delayed) {
   var tabContent = popup.find('.tab-content').eq(0);
   // Bind slimScroll.
   tabContent.slimScroll({
-    height: '300px',
+    height: '650px',
     color: '#000',
     opacity: 0.8,
     railVisible: true,
@@ -1016,7 +1016,7 @@ function appendLogs(log) {
   var lo = $('#log'),
     loDom = lo.get(0);
 
-  var offset = loDom.scrollHeight - 300,
+  var offset = loDom.scrollHeight - 650,
     poffset = lo.parent().scrollTop() || 0,
     scrollable = false;
 
@@ -1029,7 +1029,7 @@ function appendLogs(log) {
 
   if (scrollable) {
     lo.parent().slimScroll({
-      scrollTo: loDom.scrollHeight - 300
+      scrollTo: loDom.scrollHeight - 650
     });
   }
 }
